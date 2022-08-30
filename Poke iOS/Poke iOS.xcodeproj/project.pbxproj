@@ -7,19 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D744A9B828BD05980003836A /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D744A9B728BD05980003836A /* Pokemon.swift */; };
+		D744A9BB28BD08B20003836A /* PokemonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D744A9B928BD08B20003836A /* PokemonTableViewCell.swift */; };
+		D744A9BC28BD08B20003836A /* PokemonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D744A9BA28BD08B20003836A /* PokemonTableViewCell.xib */; };
+		D744A9C128BDB5ED0003836A /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = D744A9C028BDB5ED0003836A /* Cache.swift */; };
 		D7E7FCEC28BD009D001710ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E7FCEB28BD009D001710ED /* AppDelegate.swift */; };
 		D7E7FCEE28BD009D001710ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E7FCED28BD009D001710ED /* SceneDelegate.swift */; };
-		D7E7FCF028BD009D001710ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E7FCEF28BD009D001710ED /* ViewController.swift */; };
+		D7E7FCF028BD009D001710ED /* PokemonHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E7FCEF28BD009D001710ED /* PokemonHomeViewController.swift */; };
 		D7E7FCF328BD009D001710ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7E7FCF128BD009D001710ED /* Main.storyboard */; };
 		D7E7FCF528BD00A0001710ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7E7FCF428BD00A0001710ED /* Assets.xcassets */; };
 		D7E7FCF828BD00A0001710ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7E7FCF628BD00A0001710ED /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D744A9B728BD05980003836A /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		D744A9B928BD08B20003836A /* PokemonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonTableViewCell.swift; sourceTree = "<group>"; };
+		D744A9BA28BD08B20003836A /* PokemonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PokemonTableViewCell.xib; sourceTree = "<group>"; };
+		D744A9C028BDB5ED0003836A /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 		D7E7FCE828BD009D001710ED /* Poke iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Poke iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E7FCEB28BD009D001710ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7E7FCED28BD009D001710ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D7E7FCEF28BD009D001710ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D7E7FCEF28BD009D001710ED /* PokemonHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonHomeViewController.swift; sourceTree = "<group>"; };
 		D7E7FCF228BD009D001710ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D7E7FCF428BD00A0001710ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7E7FCF728BD00A0001710ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +45,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D744A9B628BD058E0003836A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D744A9B728BD05980003836A /* Pokemon.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D744A9BD28BD08BD0003836A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D744A9B928BD08B20003836A /* PokemonTableViewCell.swift */,
+				D744A9BA28BD08B20003836A /* PokemonTableViewCell.xib */,
+				D7E7FCF128BD009D001710ED /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D744A9BE28BD08CB0003836A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D7E7FCEF28BD009D001710ED /* PokemonHomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D744A9BF28BDB5E30003836A /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				D744A9C028BDB5ED0003836A /* Cache.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
 		D7E7FCDF28BD009D001710ED = {
 			isa = PBXGroup;
 			children = (
@@ -56,10 +98,12 @@
 		D7E7FCEA28BD009D001710ED /* Poke iOS */ = {
 			isa = PBXGroup;
 			children = (
+				D744A9BF28BDB5E30003836A /* Module */,
+				D744A9B628BD058E0003836A /* Model */,
+				D744A9BD28BD08BD0003836A /* View */,
+				D744A9BE28BD08CB0003836A /* Controller */,
 				D7E7FCEB28BD009D001710ED /* AppDelegate.swift */,
 				D7E7FCED28BD009D001710ED /* SceneDelegate.swift */,
-				D7E7FCEF28BD009D001710ED /* ViewController.swift */,
-				D7E7FCF128BD009D001710ED /* Main.storyboard */,
 				D7E7FCF428BD00A0001710ED /* Assets.xcassets */,
 				D7E7FCF628BD00A0001710ED /* LaunchScreen.storyboard */,
 				D7E7FCF928BD00A0001710ED /* Info.plist */,
@@ -126,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7E7FCF828BD00A0001710ED /* LaunchScreen.storyboard in Resources */,
+				D744A9BC28BD08B20003836A /* PokemonTableViewCell.xib in Resources */,
 				D7E7FCF528BD00A0001710ED /* Assets.xcassets in Resources */,
 				D7E7FCF328BD009D001710ED /* Main.storyboard in Resources */,
 			);
@@ -138,8 +183,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7E7FCF028BD009D001710ED /* ViewController.swift in Sources */,
+				D7E7FCF028BD009D001710ED /* PokemonHomeViewController.swift in Sources */,
+				D744A9B828BD05980003836A /* Pokemon.swift in Sources */,
 				D7E7FCEC28BD009D001710ED /* AppDelegate.swift in Sources */,
+				D744A9BB28BD08B20003836A /* PokemonTableViewCell.swift in Sources */,
+				D744A9C128BDB5ED0003836A /* Cache.swift in Sources */,
 				D7E7FCEE28BD009D001710ED /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,8 +341,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -321,8 +371,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
